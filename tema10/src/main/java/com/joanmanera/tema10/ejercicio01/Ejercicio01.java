@@ -29,7 +29,8 @@ public class Ejercicio01 {
 
     private ArrayList dividirParesEImpares(int[] array){
         ArrayList<Integer> numerosArrayList = new ArrayList<Integer>(10);
-        int contadorFin = array.length-1, contadorInicio=0;
+        int contador =0;
+        boolean esUltimo;
 
         for(int i = 0 ; i < array.length ; i++){
             numerosArrayList.add(i, 0);
@@ -37,11 +38,15 @@ public class Ejercicio01 {
 
         for(int i = 0 ; i < array.length ; i++){
             if(array[i]%2 == 0){
-                numerosArrayList.set(contadorInicio, array[i]);
-                contadorInicio++;
-            } else {
-                numerosArrayList.set(contadorFin, array[i]);
-                contadorFin--;
+                numerosArrayList.set(contador, array[i]);
+                contador++;
+            }
+        }
+
+        for(int i = 0 ; i < array.length ; i++){
+            if(array[i]%2 != 0){
+                numerosArrayList.set(contador, array[i]);
+                contador++;
             }
         }
 
