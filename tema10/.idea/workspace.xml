@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddb21e54-f8ba-492b-a155-31e3c508ac04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/joanmanera/tema10/ejercicio01/Ejercicio01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joanmanera/tema10/ejercicio01/Ejercicio01.java" afterDir="false" />
-    </list>
+    <list default="true" id="ddb21e54-f8ba-492b-a155-31e3c508ac04" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -36,7 +34,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/joanmanera/tema10/ejercicio01/Ejercicio01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="555">
               <caret line="41" selection-start-line="41" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -123,8 +121,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550772414290" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550772610405" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -158,6 +156,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="3" BundledDictionary0="android.dic" BundledDictionary1="jetbrains.dic" BundledDictionary2="english.dic" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -189,7 +188,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32928944" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32928944" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -219,7 +218,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/joanmanera/tema10/ejercicio01/Ejercicio01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="555">
           <caret line="41" selection-start-line="41" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
