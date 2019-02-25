@@ -11,9 +11,16 @@ public class Ejercicio02 implements IEstadisticas {
 
     public Ejercicio02(){
 
-        for (int i = 0; i < NUM_ARRAY ; i++){
-            array.add(Lib.randomAleatorio(1.0, 5.0));
-        }
+        array.add(5.0);
+        array.add(1.0);
+        array.add(3.0);
+        array.add(5.0);
+        array.add(4.0);
+        array.add(4.0);
+        array.add(3.0);
+        array.add(9.0);
+        array.add(6.0);
+        array.add(5.0);
 
         System.out.printf("Minimo: %.2f\n",minimo());
         System.out.printf("Maximo: %.2f\n",maximo());
