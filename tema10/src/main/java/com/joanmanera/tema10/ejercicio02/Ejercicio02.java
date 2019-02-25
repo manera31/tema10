@@ -15,11 +15,11 @@ public class Ejercicio02 implements IEstadisticas {
             array.add(Lib.randomAleatorio(1.0, 5.0));
         }
 
-        System.out.println("Minimo: "+minimo());
-        System.out.println("Maximo: "+maximo());
-        System.out.println("Sumatorio: "+sumatorio());
-        System.out.println("Media: "+media());
-        System.out.println("Moda: "+moda());
+        System.out.printf("Minimo: %.2f\n",minimo());
+        System.out.printf("Maximo: %.2f\n",maximo());
+        System.out.printf("Sumatorio: %.2f\n",sumatorio());
+        System.out.printf("Media: %.2f\n",media());
+        System.out.printf("Moda: %.2f\n",moda());
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Ejercicio02 implements IEstadisticas {
         double sumatorio=0;
 
         for (int i = 0 ; i < array.size() ; i++){
-            sumatorio =+ array.get(i);
+            sumatorio += array.get(i);
         }
         return sumatorio;
     }
@@ -62,21 +62,21 @@ public class Ejercicio02 implements IEstadisticas {
     @Override
     public double moda() {
         HashMap<Double, Integer> map = new HashMap<>();
-        double aux;
+        double contadorKey = 0;
+        int contadorValue = Integer.MIN_VALUE;
+
         for (int i = 0 ; i < array.size() ; i++){
             if(map.containsKey(array.get(i))){
-                if(map.replace(array.get(i), map.get(i), (map.get(i)+1))){
-                    System.out.println("Funciona");
-                } else {
-                    System.out.println("No ha funcionado");
-                }
+                map.replace(array.get(i), map.get(array.get(i)), (map.get(array.get(i))+1));
             } else {
                 map.put(array.get(i), 1);
             }
-        }
-        for(int i = 0 ; i < map.size() ; i++){
 
+            if(map.get(array.get(i))>contadorValue){
+                contadorValue = map.get(array.get(i));
+                contadorKey = array.get(i);
+            }
         }
-        return 0;
+        return contadorKey;
     }
 }
