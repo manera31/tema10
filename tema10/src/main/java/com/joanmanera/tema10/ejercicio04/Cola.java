@@ -24,9 +24,7 @@ public class Cola<T> implements ICola<T> {
 
     @Override
     public T remove() {
-        T aux = arrayList.get(0);
-        arrayList.remove(aux);
-        return aux;
+        return arrayList.remove(0);
     }
 
     @Override
@@ -37,7 +35,7 @@ public class Cola<T> implements ICola<T> {
     @Override
     public T peek() {
         if(!arrayList.isEmpty()){
-            return arrayList.get(arrayList.size()-1);
+            return arrayList.get(0);
         } else {
             return null;
         }

@@ -29,7 +29,6 @@ public class Ejercicio04 {
         System.out.println("\nIsEmpty: "+cola.isEmpty());
         System.out.println("\nSize: "+cola.size());
         System.out.println("\nPeek: "+cola.peek());
-
-
+        LinkedList
     }
 }
