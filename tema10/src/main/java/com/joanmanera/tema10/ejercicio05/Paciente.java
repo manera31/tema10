@@ -26,7 +26,7 @@ public class Paciente {
     public int getEdad(){
         GregorianCalendar fechaActual = new GregorianCalendar();
         long difMillis = fechaActual.getTimeInMillis()-fechaNac.getTimeInMillis();
-        return (int)(((((difMillis/1000)/60)/60)/24)/365);
+        return (int)(((((difMillis/1000)/60)/60)/24)/365.25);
     }
 
     public String getIMCMessage(){
