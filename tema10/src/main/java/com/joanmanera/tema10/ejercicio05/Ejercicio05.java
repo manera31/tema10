@@ -1,4 +1,4 @@
-package com.joanmanera.tema10.ejericio05;
+package com.joanmanera.tema10.ejercicio05;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;

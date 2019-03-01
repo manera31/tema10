@@ -1,13 +1,9 @@
 package com.joanmanera.tema10;
 
 
-import com.joanmanera.tema10.ejercicio01.Ejercicio01;
-import com.joanmanera.tema10.ejercicio02.Ejercicio02;
-import com.joanmanera.tema10.ejercicio03.Ejercicio03;
-import com.joanmanera.tema10.ejercicio04.Ejercicio04;
-import com.joanmanera.tema10.ejericio05.Ejercicio05;
-
-import java.util.GregorianCalendar;
+import com.joanmanera.tema10.ejercicio05.Ejercicio05;
+import com.joanmanera.tema10.ejercicio06.Ejercicio06;
+import com.joanmanera.tema10.ejercicio10.Ejercicio10;
 
 public class Main {
     public static void main (String[] args){
@@ -15,7 +11,9 @@ public class Main {
         //Ejercicio02 ej02 = new Ejercicio02();
         //Ejercicio03 ej03 = new Ejercicio03();
         //Ejercicio04 ej04 = new Ejercicio04();
-        Ejercicio05 ej05 = new Ejercicio05();
+        //Ejercicio05 ej05 = new Ejercicio05();
+        //Ejercicio06 ej06 = new Ejercicio06();
+        Ejercicio10 ej10 = new Ejercicio10();
     }
 
 }
