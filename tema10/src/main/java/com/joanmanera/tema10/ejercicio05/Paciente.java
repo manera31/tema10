@@ -3,6 +3,7 @@ package com.joanmanera.tema10.ejercicio05;
 import java.util.GregorianCalendar;
 
 public class Paciente {
+    private static int idAuto = 1;
     private int id;
     private String nombre;
     private GregorianCalendar fechaNac;
@@ -10,8 +11,8 @@ public class Paciente {
     private float altura;
     private float peso;
 
-    public Paciente(int id, String nombre, GregorianCalendar fechaNac, char sexo, float altura, float peso) {
-        this.id = id;
+    public Paciente(String nombre, GregorianCalendar fechaNac, char sexo, float altura, float peso) {
+        this.id = idAuto++;
         this.nombre = nombre;
         this.fechaNac = fechaNac;
         this.sexo = sexo;

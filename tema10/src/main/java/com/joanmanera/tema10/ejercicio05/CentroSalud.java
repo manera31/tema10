@@ -1,5 +1,6 @@
 package com.joanmanera.tema10.ejercicio05;
 
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
@@ -15,8 +16,8 @@ public class CentroSalud {
         pacientes = new ArrayList<>(numero);
     }
 
-    public void addPaciente(int id, String nombre, GregorianCalendar fechaNac, char sexo, float altura, float peso){
-        pacientes.add(paciente = new Paciente(id, nombre, fechaNac, sexo, altura, peso));
+    public void addPaciente(String nombre, GregorianCalendar fechaNac, char sexo, float altura, float peso){
+        pacientes.add(paciente = new Paciente(nombre, fechaNac, sexo, altura, peso));
     }
 
     public int[] menorMayor(){
