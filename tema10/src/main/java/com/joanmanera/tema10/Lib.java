@@ -1,5 +1,9 @@
 package com.joanmanera.tema10;
 
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -30,5 +34,22 @@ public class Lib {
         return rdn.nextInt(num);
     }
 
-    public static double randomAleatorio(double min, double max){ return min + (max - min) * rdn.nextDouble(); }
+    public static double randomAleatorio(double min, double max){
+        return min + (max - min) * rdn.nextDouble();
+    }
+
+    public int getEdad(GregorianCalendar fechaNacimiento) {
+        LocalDate hoy = LocalDate.now();
+        LocalDate cumple;
+        Period p;
+        int anyo = fechaNacimiento.get(Calendar.YEAR);
+        //fechaNacimiento.get(Calendar.MONTH) devuelve en el rango [0-11], hay que sumar 1
+        int mes = fechaNacimiento.get(Calendar.MONTH) + 1;
+        int dia = fechaNacimiento.get(Calendar.DAY_OF_MONTH);
+
+
+        cumple = LocalDate.of(anyo, mes, dia);
+        p = Period.between(cumple, hoy);
+        return p.getYears();
+    }
 }
